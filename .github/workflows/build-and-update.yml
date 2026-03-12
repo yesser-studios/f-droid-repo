@@ -47,11 +47,11 @@ jobs:
 
       - name: Build APKs
         working-directory: fdroid
-        run: fdroid build -v
+        run: fdroid build -v --all
 
       - name: Publish (sign APKs)
         working-directory: fdroid
-        run: fdroid publish -v
+        run: fdroid publish -v --all
 
       - name: Update index
         working-directory: fdroid
