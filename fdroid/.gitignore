@@ -1,0 +1,9 @@
+config.yml
+keystore.jks
+tmp/
+unsigned/
+repo/status/
+build/
+logs/
+*.log.gz
+*.DS_Store
