@@ -51,7 +51,7 @@ jobs:
 
       - name: Publish (sign APKs)
         working-directory: fdroid
-        run: fdroid publish -v --all
+        run: fdroid publish -v
 
       - name: Update index
         working-directory: fdroid
