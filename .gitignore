@@ -1,4 +1,6 @@
-fdroid/config.yml
-fdroid/keystore.jks
-fdroid/tmp/
-fdroid/unsigned/
+config.yml
+keystore.jks
+tmp/
+unsigned/
+*/status/
+build/
