@@ -47,7 +47,7 @@ jobs:
 
       - name: Build APKs
         working-directory: fdroid
-        run: fdroid build --no-server -v
+        run: fdroid build -v
 
       - name: Publish (sign APKs)
         working-directory: fdroid
