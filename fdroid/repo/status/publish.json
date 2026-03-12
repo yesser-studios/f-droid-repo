@@ -1,0 +1,1 @@
+{"/etc/issue.net":"Ubuntu 24.04.3 LTS","apksigner":"/usr/bin/apksigner","commandLine":["/usr/bin/fdroid publish","-v"],"endTimestamp":1773351302774,"jarsigner":"/usr/lib/jvm/default-java/bin/jarsigner","keytool":"/usr/lib/jvm/default-java/bin/keytool","startTimestamp":1773351301000,"subcommand":"publish"}
