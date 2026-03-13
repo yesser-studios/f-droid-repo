@@ -33,7 +33,9 @@ jobs:
 
       - name: Install fdroidserver
         run: |
-          uv tool install fdroidserver --with https://gitlab.com/fdroid/gradlew-fdroid.git
+          sudo add-apt-repository ppa:fdroid/fdroidserver
+          sudo apt-get update
+          sudo apt-get install -y fdroidserver
 
       - name: Restore keystore
         run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > keystore.jks
