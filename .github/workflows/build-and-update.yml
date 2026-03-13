@@ -68,6 +68,8 @@ jobs:
       - name: Update index
         run: fdroid update --create-metadata -v
 
+      - run: rm ./repo/.gitignore
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
