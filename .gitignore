@@ -2,5 +2,7 @@ config.yml
 keystore.jks
 tmp/
 unsigned/
-*/status/
+repo/status/
 build/
+logs/
+*.log.gz

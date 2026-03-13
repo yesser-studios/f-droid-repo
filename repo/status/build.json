@@ -1,1 +1,0 @@
-{"/etc/issue.net":"Ubuntu 24.04.3 LTS","commandLine":["/home/runner/.local/bin/fdroid build","-v","--all"],"endTimestamp":1773351836311,"failedBuilds":[["com.yesser_studios.death_switch",1]],"startTimestamp":1773351836000,"subcommand":"build","successfulBuildIds":[]}
