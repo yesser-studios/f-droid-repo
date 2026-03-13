@@ -1,4 +1,4 @@
-repo_url: "https://yesser-studios.github.io/f-droid-repo/repo"
+repo_url: "https://yesser-studios.github.io/f-droid-repo/fdroid/repo"
 repo_name: "Yesser Studios F-Droid Repo"
 repo_description: "F-Droid repository for Yesser Studios apps"
 keystore: "${GITHUB_WORKSPACE}/keystore.jks"
