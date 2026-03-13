@@ -6,3 +6,6 @@ repo/status/
 build/
 logs/
 *.log.gz
+repo/
+!repo/index.html
+!repo/index.css
