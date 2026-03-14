@@ -1,11 +1,6 @@
 Categories:
   - Games
 License: MIT
-Name: Death Switch
-Summary: An antistress app
-Description: |-
-  In this app, you can turn on the Death switch and then respawn.
-  Deaths are added to a counter that saves even after closing the app.
 AuthorName: yesseruser
 WebSite: https://github.com/yesseruser/death-switch-android
 # Changelog: (web link)
