@@ -70,8 +70,7 @@ jobs:
       - name: Restore existing repo
         run: |
           if [ -d gh-pages/fdroid/repo ]; then
-            cp -r gh-pages/fdroid/repo/*apk* repo/ 2>/dev/null || true
-            cp -r gh-pages/fdroid/repo/*src* repo/ 2>/dev/null || true
+            cp -r gh-pages/fdroid/repo/* repo/ 2>/dev/null || true
           fi
           rm -rf gh-pages
 
