@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: gh-pages
-          path: /tmp/gh-pages
+          path: gh-pages
 
       - run: rm ./repo/.gitignore
 
@@ -69,10 +69,11 @@ jobs:
 
       - name: Restore existing repo
         run: |
-          if [ -d /tmp/gh-pages/fdroid/repo ]; then
-            cp -r /tmp/gh-pages/fdroid/repo/*apk* repo/ 2>/dev/null || true
-            cp -r /tmp/gh-pages/fdroid/repo/*src* repo/ 2>/dev/null || true
+          if [ -d gh-pages/fdroid/repo ]; then
+            cp -r gh-pages/fdroid/repo/*apk* repo/ 2>/dev/null || true
+            cp -r gh-pages/fdroid/repo/*src* repo/ 2>/dev/null || true
           fi
+          rm -rf gh-pages
 
       - name: Build APKs
         run: fdroid build -v --all
