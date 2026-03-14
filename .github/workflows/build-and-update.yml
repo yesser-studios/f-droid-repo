@@ -20,6 +20,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: /tmp/gh-pages
+
       - run: rm ./repo/.gitignore
 
       - uses: actions/cache@v4
@@ -60,6 +66,13 @@ jobs:
           KEY_PASS: ${{ secrets.KEY_PASS }}
           KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
         run: envsubst < config.yml.template > config.yml
+
+      - name: Restore existing repo
+        run: |
+          if [ -d /tmp/gh-pages/fdroid/repo ]; then
+            cp -r /tmp/gh-pages/fdroid/repo/*apk* repo/ 2>/dev/null || true
+            cp -r /tmp/gh-pages/fdroid/repo/*src* repo/ 2>/dev/null || true
+          fi
 
       - name: Build APKs
         run: fdroid build -v --all
